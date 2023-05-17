@@ -1,0 +1,20 @@
+module.exports = {
+	env: { browser: true, es2020: true },
+	extends: ["eslint:recommended", "plugin:react/recommended", "plugin:react/jsx-runtime", "plugin:react-hooks/recommended"],
+	parserOptions: { ecmaVersion: "latest", sourceType: "module" },
+	settings: { react: { version: "18.2" } },
+	plugins: ["react-refresh"],
+	rules: {
+		"react/jsx-no-useless-fragment": true,
+		"react/style-prop-object": true,
+		"react/jsx-indent-props": true,
+		"react/jsx-pascal-case": true,
+		"react/react-in-jsx-scope": 0,
+		"react/button-has-type": 0,
+		"react/jsx-no-undef": true,
+		"react/jsx-no-bind": true,
+		"react/jsx-indent": true,
+		"react/prop-types": 0,
+		"prefer-double": true,
+	},
+};
